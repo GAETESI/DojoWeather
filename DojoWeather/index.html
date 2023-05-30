@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="tittle">DojoWeather</h1>
+            <ul class="cities">
+                <li onclick="changeCity()"><a href="#">Burbank</a></li>
+                <li onclick="changeCity()"><a href="#">Dallas</a></li>
+                <li onclick="changeCity()"><a href="#">Chicago</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="CiudadActual">
+                <h2> San Jose</h2>
+            <div>   
+                <span>show the temperature in</span>
+                <select onchange="changeMetric(this)">
+                    <option value="celcius"> °C</option>
+                    <option value="farenheit"> °F</option>
+                </select>
+                </div> 
+            </div>
+            <div class="forecast">
+                <div class="day">
+                    <h3> Today</h3>
+                    <img src="./assets/some_rain.png" alt="sun">
+                    <div class="description"> some rain</div>
+                    <div class="temperatures">
+                        <div class="maxtemp">
+                        <span class="max">24</span>°
+                        </div>
+                        <div class="mintemp">
+                        <span class="min">18</span>°
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <h3> Tomorrow</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <div class="description"> some sun</div>
+                    <div class="temperatures">
+                        <div class="maxtemp">
+                        <span class="max">27</span>°
+                        </div>
+                        <div class="mintemp">
+                        <span class="min">19</span>°
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <h3> Friday</h3>
+                    <img src="./assets/some_clouds.png" alt="sun">
+                    <div class="description"> some clouds</div>
+                    <div class="temperatures">
+                        <div class="maxtemp">
+                        <span class="max">21</span>°
+                        </div>
+                        <div class="mintemp">
+                        <span class="min">16</span>°
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <h3> Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <div class="description"> some sun</div>
+                    <div class="temperatures">
+                        <div class="maxtemp">
+                        <span class="max">26</span>°
+                        </div>
+                        <div class="mintemp">
+                        <span class="min">21</span>°
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </main>
+        <div class="cookie">
+            <img src="./assets/cookie.png" alt="cooke img">
+            <div>
+                <h3> Stop! Cookie time</h3>
+            </div>
+            <p> We use cookies (sadly not the edible ones) 
+                to personalize content and ads, to provide
+                social medial features and to analise out traffict.
+                <a href="#">Read more...</a></p>
+                <button onclick="acceptCookie(this)"> I Accept</button>
+        </div>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
